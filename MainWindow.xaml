@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MachineSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="500">
+        Title="DRO" Height="400" Width="500">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="70,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.264,-5.955"><Run FontWeight="Bold" FontSize="40" Text="X"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="70,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.264,-5.955"><Run FontWeight="Bold" FontSize="40" Text="Y"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="70,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.264,-5.955"><Run FontWeight="Bold" FontSize="40" Text="Z"/><LineBreak/><Run/></TextBlock>
-        <Border BorderThickness="0.5" BorderBrush="Black" Margin="230,75,90,240" RenderTransformOrigin="1.77,-0.058">
-            <TextBlock TextWrapping="Wrap" Text="0" FontWeight="Bold" FontSize="40"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.264,-5.955" Grid.Column="1" Grid.ColumnSpan="2"><Run FontWeight="Bold" FontSize="40" Text="X"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="45,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.264,-5.955" Grid.Column="1" Grid.ColumnSpan="2"><Run FontWeight="Bold" FontSize="40" Text="Y"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="45,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.264,-5.955" Grid.Column="1" Grid.ColumnSpan="2"><Run FontWeight="Bold" FontSize="40" Text="Z"/><LineBreak/><Run/></TextBlock>
+        <Border BorderThickness="0.5" BorderBrush="Black" Margin="158,75,90,240" RenderTransformOrigin="1.77,-0.058" Grid.Column="2">
+            <TextBlock TextWrapping="Wrap" Text="0" FontWeight="Bold" FontSize="40" x:Name="coordinate_x"/>
         </Border>
-        <Border BorderThickness="0.5" BorderBrush="Black" Margin="230,175,90,140" RenderTransformOrigin="0.308,1.127">
-            <TextBlock TextWrapping="Wrap" Text="0" FontWeight="Bold" FontSize="40"/>
+        <Border BorderThickness="0.5" BorderBrush="Black" Margin="158,175,90,140" RenderTransformOrigin="0.308,1.127" Grid.Column="2">
+            <TextBlock TextWrapping="Wrap" Text="0" FontWeight="Bold" FontSize="40" x:Name="coordinate_y"/>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="0.5" Margin="230,275,90,45" RenderTransformOrigin="0.364,0.2">
-            <TextBlock TextWrapping="Wrap" Text="0" FontWeight="Bold" FontSize="40"/>
+        <Border BorderBrush="Black" BorderThickness="0.5" Margin="158,275,90,45" RenderTransformOrigin="0.364,0.2" Grid.Column="2">
+            <TextBlock TextWrapping="Wrap" Text="0" FontWeight="Bold" FontSize="40" x:Name="coordinate_z"/>
         </Border>
+        <TextBlock HorizontalAlignment="Left" Margin="216,36,0,0" TextWrapping="Wrap" Text="P2" Name="P2coordinate" VerticalAlignment="Top" Height="20" Width="95"/>
 
     </Grid>
 </Window>
